@@ -108,19 +108,6 @@ footer p{
 
 
 
-
-
-html {
-  height: 100%;
-}
-body {
-  margin:0;
-  padding:0;
-  font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
-}
-
-
 input[type=date]:required:invalid::-webkit-datetime-edit {
   color: transparent;
 }
@@ -137,22 +124,15 @@ input[type=date]:focus::-webkit-datetime-edit {
 
 
 
-html {
-  height: 100%;
-}
-body {
-  margin:0;
-  padding:0;
-  font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
-}
 
 .login-box {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 90%;
-  padding: 40px;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom: 40px;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
@@ -197,33 +177,36 @@ body {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: white;
   font-size: 12px;
 }
 
 .login-box form a {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
   display: block;
 text-align: center;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: white;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 20px;
-  letter-spacing: 4px
+  margin-top: 50px;
+  letter-spacing: 4px;
+  border-radius: 10px;
 }
 
 .login-box a:hover {
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  background: white;
+  color: black;
+
+  border-radius: 10px;
+  box-shadow: 0 0 5px white,
+              0 0 25px white,
+              0 0 50px white,
+              0 0 100px white;
 }
 
 .login-box a span {
@@ -236,7 +219,7 @@ text-align: center;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, white);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -256,7 +239,7 @@ text-align: center;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, white);
   animation: btn-anim3 1s linear infinite;
 
 }
@@ -268,4 +251,27 @@ text-align: center;
   50%,100% {
     right: 100%;
   }
+}
+
+.user-box-file
+{
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.user-box-file input{
+
+}
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+
+  border: 1px solid rgb(255, 255, 255);
+  display: block;
+
+  padding: 6px 12px;
+  cursor: pointer;
 }
