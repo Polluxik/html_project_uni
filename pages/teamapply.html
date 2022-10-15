@@ -14,6 +14,10 @@
 </head>
 
 <body>
+
+
+
+
   <nav>
     <div class="topnav">
       <a href="/index.html">DOMŮ</a>
@@ -32,9 +36,7 @@
   <main>
     <div class="container">
       <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, molestias animi, velit veniam suscipit
-        mollitia sunt sint eligendi quae culpa sit, alias porro voluptates provident molestiae eaque dolor accusamus
-        quod.
+        <p></p>
       </div>
       <div>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, molestias animi, velit veniam suscipit
@@ -42,7 +44,7 @@
         quod.
       </div>
       <div class="login-box">
-        <h2>Napište nám</h2>
+        <h2>Vyplňte formulář</h2>
         <form>
           <div class="user-box">
             <input type="text" name="name" required placeholder="Jméno a příjmení">
@@ -56,7 +58,7 @@
           </div>
           <div class="user-box"><br>
             <input placeholder="Datum narození" class="textbox-n" type="text" onfocus="(this.type='date')"
-              onblur="(this.type='text')" id="date" />
+              onblur="(this.type='text')" id="datum" />
 
           </div>
           <div class="user-box-file">
@@ -65,9 +67,18 @@
             </label>
             <input id="file-upload" type="file" />
           </div>
-
+          <br>
+          <div>
+            <select>
+              <option value="" disabled selected hidden required>Zaměření</option>
+              <option value="prg">Programátor</option>
+              <option value="gfx">Grafik</option>
+              <option value="ost">Zvukař</option>
+              <option value="tst">Tester</option>
+            </select>
+          </div>
           <div class="form-button">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Odeslat">
           </div>
 
         </form>
@@ -76,11 +87,11 @@
 
   </main>
 
-  <!-- FIX FOOTER -->
   <footer>
     <p id="date"></p>
   </footer>
   <script src="/scripts/script.js"></script>
+  </div>
 </body>
 
 </html>
