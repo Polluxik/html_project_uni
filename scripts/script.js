@@ -8,13 +8,14 @@ function myFunction() {
     }
 }
 
+
 //slideshow
 let slideIndex = 0;
 showSlides();
 
 
 function showSlides() {
-    try{
+    try {
 
         let i;
         let slides = document.getElementsByClassName("mySlides");
@@ -23,18 +24,18 @@ function showSlides() {
         }
         slideIndex++;
         if (slideIndex > slides.length) { slideIndex = 1 }
-        
+
         slides[slideIndex - 1].style.display = "block";
         setTimeout(showSlides, 5000);
     }
-catch{
+    catch {
 
-}
-    
+    }
+
 }
 
 
 //posledni uprava
 let text = this.document.lastModified;
-    document.getElementById("date").innerHTML = "Web slouží jako školní projekt<br>Poslední úprava: " + text;
-    console.log(text);
+document.getElementById("date").innerHTML = "Web slouží jako školní projekt<br>Poslední úprava: " + text;
+console.log(text);
