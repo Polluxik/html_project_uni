@@ -37,5 +37,5 @@ function showSlides() {
 
 //posledni uprava
 let text = this.document.lastModified;
-document.getElementById("date").innerHTML = "Web slouží jako školní projekt<br>Poslední úprava: " + text;
+document.getElementById("date").innerHTML = "Web slouží jako zápočtový projekt<br>©2022 - Všechna práva vyhrazena<br>malindo1@uhk.cz<br>Poslední úprava: " + text;
 console.log(text);
