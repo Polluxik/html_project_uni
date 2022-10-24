@@ -58,24 +58,27 @@
         <form>
           <div class="user-box">
             <input type="text" name="name" required placeholder="Jméno a příjmení">
+            <label for="name"></label>
           </div>
           <div class="user-box"><br>
             <input type="email" name="email" required placeholder="E-Mail">
+            <label for="email"></label>
           </div>
           <br>
           <div class="user-box">
             <input type="tel" name="tel" required placeholder="Telefon">
+            <label for="tel"></label>
           </div>
           <div class="user-box"><br>
-            <input placeholder="Datum narození" class="textbox-n" type="text" onfocus="(this.type='date')"
+            <input name="datum" placeholder="Datum narození" class="textbox-n" type="text" onfocus="(this.type='date')"
               onblur="(this.type='text')" id="datum" />
-
+              <label for="name"></label>
           </div>
           <div class="user-box-file">
             <label for="file-upload" class="custom-file-upload">
               <i class="fa fa-cloud-upload"></i> Váš životopis
             </label>
-            <input id="file-upload" type="file" />
+            <input id="file-upload" type="file" name="upload"/>
           </div>
           <br>
           <div>
