@@ -148,9 +148,13 @@ h1 {
 }
 
 .login-box .user-box input::placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.4);
   letter-spacing: 2px;
   opacity: 1;
+}
+.login-box .user-box label{
+  display: block;
+  text-align: left;
 }
 
 .login-box label {

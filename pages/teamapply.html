@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="icon" type="image/x-icon" href="/images/icon_site.ico">
   <title>Přidej se do teamu - Cryto Games</title>
@@ -25,7 +24,7 @@
           <a class="active" href="/pages/teamapply.html">PŘIDEJ SE DO TÝMU</a>
           <a href="/pages/contact.html">KONTAKT</a>
         </div>
-        <a href="#" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>&nbsp</a>
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()">X</a>
       </div>
     </div>
   </nav>
@@ -55,28 +54,31 @@
         <h2>Vyplňte formulář</h2>
         <form>
           <div class="user-box">
-            <label for="jmeno">Jméno a příjmení</label>
-            <input type="text" name="jmeno" required placeholder="Jméno a příjmení">
+            <label for="jmeno">Jméno a příjmení</label><br>
+            <input type="text" id="jmeno" name="jmeno" required placeholder="Jméno a příjmení">
           </div>
-          <div class="user-box"><br>
-            <label for="mail">E-Mail</label>
-            <input type="email" name="mail" required placeholder="E-Mail">
+          <br>
+          <div class="user-box">
+            <label for="mail">E-Mail</label><br>
+            <input type="email" id="mail" name="mail" required placeholder="E-Mail">
           </div>
           <br>
           <div class="user-box">
             <label for="telefon">Telefon</label><br>
-            <input type="tel" name="telefon" required placeholder="Telefon">
+            <input type="tel" id="telefon" name="telefon" required placeholder="Telefon">
           </div>
-          <div class="user-box"><br>
-            <label for="datum">Datum narození</label>
+          <br>
+          <div class="user-box">
+            <label for="datum">Datum narození</label><br>
             <input name="datum" placeholder="Datum narození" class="textbox-n" type="text" onfocus="(this.type='date')"
               onblur="(this.type='text')" id="datum" />
           </div>
+          <br>
           <div class="user-box-file">
             <label for="file-upload" class="custom-file-upload">
               <i class="fa fa-cloud-upload"></i> Váš životopis
             </label>
-            <input id="file-upload" type="file" name="upload"/>
+            <input id="file-upload" type="file" name="upload" />
           </div>
           <br>
           <div>
@@ -91,14 +93,14 @@
           <div class="form-button">
             <input type="submit" value="Odeslat">
           </div>
-          
+
         </form>
-        
+
       </div>
       <div class="info">
         <p>*Po odeslání Vám příjde e-mail s potvrzením, že se formulář odeslal správně a najdete zde Vámi vyplněný
           formulář.</p>
-          <p>Pokud by Vám e-mail nedošel, prosíme Vás ať si zkontrolujete spam, pokud by jste e-mail do 20
+        <p>Pokud by Vám e-mail nedošel, prosíme Vás ať si zkontrolujete spam, pokud by jste e-mail do 20
           minut nenašli, vyplňte formulář znovu, děkujeme.</p>
       </div>
     </div>
