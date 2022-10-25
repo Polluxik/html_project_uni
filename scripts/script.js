@@ -13,7 +13,6 @@ function myFunction() {
 let slideIndex = 0;
 showSlides();
 
-
 function showSlides() {
     try {
 
@@ -33,7 +32,6 @@ function showSlides() {
     }
 
 }
-
 
 //posledni uprava
 let text = this.document.lastModified;
