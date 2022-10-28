@@ -24,7 +24,7 @@
           <a class="active" href="/pages/teamapply.html">PŘIDEJ SE DO TÝMU</a>
           <a href="/pages/contact.html">KONTAKT</a>
         </div>
-        <a href="javascript:void(0)" class="icon" onclick="myFunction()">X</a>
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()">MENU</a>
       </div>
     </div>
   </nav>
@@ -71,14 +71,14 @@
           <div class="user-box">
             <label for="datum">Datum narození</label><br>
             <input name="datum" placeholder="Datum narození" class="textbox-n" type="text" onfocus="(this.type='date')"
-              onblur="(this.type='text')" id="datum" />
+              onblur="(this.type='text')" id="datum">
           </div>
           <br>
           <div class="user-box-file">
             <label for="file-upload" class="custom-file-upload">
               <i class="fa fa-cloud-upload"></i> Váš životopis
             </label>
-            <input id="file-upload" type="file" name="upload" />
+            <input id="file-upload" type="file" name="upload">
           </div>
           <br>
           <div>
@@ -91,7 +91,7 @@
             </select>
           </div>
           <div class="form-button">
-            <input type="submit" value="Odeslat">
+            <input type="submit" value="Odeslat" onclick="odeslani()">
           </div>
 
         </form>
